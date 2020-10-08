@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../../src/fonts/OpenSans-Bold.ttf') format('ttf');
+  }
+
+  @font-face {
+    font-family: 'Banny';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../src/fonts/Banny-Round.otf') format('otf')
+  }
+
+  
+

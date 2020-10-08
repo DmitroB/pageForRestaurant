@@ -1,0 +1,279 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+body {
+  color: #fff;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  padding: 0px 80px 0px 80px;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 0px 60px 0px 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section {
+    padding: 0px 40px 0px 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section {
+    padding: 0px 20px 0px 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.btn {
+  color: #fff;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 20px 70px;
+  border-radius: 5px;
+  text-decoration: none;
+  outline: none;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .btn {
+    padding: 15px 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 462px) {
+  .btn {
+    padding: 5px 20px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .btn {
+    padding: 3px 15px;
+  }
+}
+@media screen and (max-width: 388px) {
+  .btn {
+    padding: 1px 15px;
+  }
+}
+@media screen and (max-width: 378px) {
+  .btn {
+    padding: 0px 15px;
+  }
+}
+@media screen and (max-width: 378px) {
+  .btn {
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .btn {
+    padding: 6px 10px;
+  }
+}
+
+a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+}
+@media screen and (max-width: 885px) {
+  a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 830px) {
+  a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 800px) {
+  a {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 388px) {
+  a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  a {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 345px) {
+  a {
+    font-size: 6px;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-style: none;
+}
+
+.icon {
+  width: 1em;
+  height: 2em;
+}
+
+.fb, .ing, .tw {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+  color: #fff;
+  background-color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+}
+
+.icon {
+  width: 1em;
+  height: 2em;
+}
+
+h4, h5, h6 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Banny';
+  font-size: 96px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1135px) {
+  h1 {
+    font-size: 66px;
+  }
+}
+@media screen and (max-width: 1135px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 568px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 462px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 378px) {
+  h1 {
+    font-size: 15px;
+  }
+}
+
+h2 {
+  font-family: 'Banny';
+  font-size: 36px;
+  color: #000000;
+}
+@media screen and (max-width: 830px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 771px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 750px) {
+  h2 {
+    color: #000000;
+  }
+}
+@media screen and (max-width: 568px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+
+h3 {
+  font-family: 'Banny';
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-indent: 20px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 18px;
+  color: #000000;
+}
+
+h5 {
+  font-size: 14px;
+  align-items: center;
+  text-indent: 20px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+@media screen and (max-width: 830px) {
+  p {
+    font-size: 12px;
+  }
+}

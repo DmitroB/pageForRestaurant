@@ -1,0 +1,475 @@
+@import "../scss/color.scss";
+
+
+.header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+        .first__block{
+            display: flex;
+            position: absolute;
+            top: 0;
+                .menu{
+                    display: flex;
+                    padding-top: 10px;
+                        @media screen and (max-width: 768px){
+                            position: fixed;
+                            visibility: hidden;
+                            flex-direction: column;
+                            top: 0px;
+                            right: 0px;
+                            z-index: 99;
+                            transform: translateY(-1000px);
+                            transition: all 0.5s linear;
+                            padding-top: 0px;
+                        }
+                }
+                .active{
+                    @media screen and (max-width: 768px) {
+                        transform: translateY(0%);
+                        transition: all 0.3s linear;
+                        
+                    }
+                } 
+        }
+}
+
+.main-menu{
+    .items-menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media screen and (max-width: 768px){
+            display: block;
+            padding-top: 20%;
+            text-align: center;
+        }
+            li{
+                padding: 0px 40px;
+                @media screen and (max-width: 1200px){
+                    padding: 0px 30px;
+                }
+                @media screen and (max-width: 1135px){
+                    padding: 0px 20px;
+                }
+                @media screen and (max-width: 768px){
+                    padding: 5px 0px;
+                }
+                a{
+                    color: $white;
+                }
+                a:hover {
+                    color: $yellow;
+                    transition: 0.5s;
+                }
+                
+            }
+    }
+}
+.main-active{
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        background-color: $black;
+        opacity: 1;
+        transition: all 0.5s linear;
+        z-index: 100;
+        box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.5);
+        width: 50vh;
+        height: 1000vh;
+    }
+    @media screen and (max-width: 568px){
+        width: 40vh;
+    }
+}
+
+ul :nth-child(5) {
+    padding-top: 20px;
+        @media screen and (max-width: 768px){
+            display: none;
+        }
+}
+
+aside :nth-child(5) {
+    padding: 0px;
+}
+
+.logo{
+    margin: 0 auto;
+
+}
+
+.mobile-menu {
+    z-index: 3;
+    display: none;
+        @media screen and (max-width: 768px){
+            display: block;
+            position: fixed;
+            right: 48%;
+            z-index: 9999;
+        }
+        @media screen and (max-width: 568px){
+            right: 1%;
+        }
+            .menu-btn {
+                display: block;
+                height: 0px;
+                border: none;
+                background: transparent;
+                outline: none;
+                    .fas{
+                        color: $yellow;
+                        font-size: 24px;
+                    }
+            }
+}
+
+
+
+
+.shadow-fix{
+    @media screen and (max-width: 768px){
+    top: -100000px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    }
+}
+
+.shadow-active{
+    @media screen and (max-width: 768px){
+        top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.face__block{
+    background: url(../../src/img/header-bg.png) no-repeat;
+    background-size: 100%;
+    padding: 20% 0% 8% 0%;
+        @media screen and (max-width: 850px){
+            padding: 16% 0% 8% 0%;
+        }
+        @media screen and (max-width: 800px){
+            padding: 14% 0% 8% 0%;
+        }
+        @media screen and (max-width: 768px){
+            padding: 14% 0% 8% 0%;
+        }
+        @media screen and (max-width: 620px){
+            padding: 6% 0% 8% 0%;
+        }
+        @media screen and (max-width: 513px){
+            padding: 0% 0% 8% 0%;
+        }
+        @media screen and (max-width: 410px){
+            padding: 0% 0% 7% 0%;
+        }
+        @media screen and (max-width: 378px){
+            padding: 0% 0% 9% 0%;
+        }
+        @media screen and (max-width: 345px){
+            padding: 0% 0% 2% 0%;
+        }
+        .head{
+            justify-content: center;
+            position: relative;
+            .face__info{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                    .open__hours{
+                        transform: rotate(-90deg);
+                    }
+            }
+        }
+} 
+
+
+.restaurant{
+    display: none;
+    position: absolute;
+    top: 24%;
+    left: 1%;
+}
+
+
+.main__info{
+    text-align: center;
+        p{
+            padding-top: 0px;
+        }
+        h1{
+            padding-top: 15px;
+        }
+}
+
+.rectangle{
+    margin-top: 15px;
+        .rectangle{
+            margin: 0px auto;
+            text-align: center;
+            width: 60px;
+            height: 5px;
+            background: $yellow;
+            @media screen and (max-width: 1200px){
+                height: 3px;
+            }
+            @media screen and (max-width: 768px){
+                height: 1px;
+            }
+        }
+}
+
+
+
+.book{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 90px;
+        @media screen and (max-width: 1245px){
+            padding-bottom: 50px;
+        }
+        @media screen and (max-width: 410px){
+            padding-bottom: 30px;
+        }
+        @media screen and (max-width: 345px){
+            padding-bottom: 18px;
+        }
+        :hover{
+            color: $black;
+        }
+}
+
+.general__btn{
+    border: none;
+    background: $yellow;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+}
+
+
+.second__btn{
+    margin-left: 40px;
+    color: $white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+        :hover{
+            color: $yellow;
+        }
+}
+
+.arrow{
+    text-align: center;
+}
+.circle{
+    width: 30px;
+	height: 30px;
+	background: $white;
+    border-radius: 50px;
+    margin: 0px auto;
+}
+.fas{
+    color: $black;
+    padding-top: 8px;
+}
+
+.social__pages{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 8%;
+    z-index: 9;
+        @media screen and (max-width: 1199px){
+            right: 5%;
+        }
+        @media screen and (max-width: 768px){
+            display: none;
+        }
+}
+
+.social{
+    font-size: 20px;
+    width: 50px;
+	height: 50px;
+	background: $black;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+        a{
+            :hover{
+                color: $yellow;
+            }
+        }
+}
+
+.media{
+    margin-top: 20px;
+}
+
+.fab{
+    font-size: 20px;
+    padding-top: 14px;
+}
+
+
+
+
+.about {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+        .sec__about{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+            padding: 0px 77px;
+            @media screen and (max-width: 1200px) {
+                padding: 0px 60px;
+            }
+            @media screen and (max-width: 992px) {
+                padding: 0px 40px;
+            }
+            @media screen and (max-width: 850px) {
+                padding: 0px 20px;
+            }
+            @media screen and (max-width: 800px) {
+                padding: 0px;
+            }
+            @media screen and (max-width: 750px) {
+                width: 100%;
+            }
+                h4{
+                    padding-top: 20px;
+                }
+                P{
+                    padding-top: 15px;
+                    color: $black;
+                }
+        }
+        .about__photo{
+            display: flex;
+            position: relative;
+            width: 50%;
+            @media screen and (max-width: 750px) {
+                width: 100%;
+            }
+        }
+        .square{ 
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            z-index: 1;
+        }
+}
+
+.our__team {
+    display: flex;
+    position: relative;
+    background: url(../../src/img/specialtys-bg.png) no-repeat;
+    background-size: 100%;
+        p{
+            text-align: center;
+        }
+        .team__about{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+            padding: 0px 90px;
+            @media screen and (max-width: 1200px) {
+                padding: 0px 80px;
+            }
+            @media screen and (max-width: 1124px) {
+                padding: 0px 60px;
+            }
+            @media screen and (max-width: 992px) {
+                padding: 0px 40px;
+            }
+            @media screen and (max-width: 850px) {
+                padding: 0px 20px;
+            } 
+            @media screen and (max-width: 800px) {
+                padding: 0px;
+            }
+            @media screen and (max-width: 750px) {
+                width: 100%;
+            }
+                h2{
+                    color: $white;
+                    @media screen and (max-width: 750px){
+                        color: $black;
+                    }
+                }
+                h4{
+                    color: $white;
+                    padding-top: 20px;
+                    @media screen and (max-width: 750px){
+                        color: $black;
+                    }
+                }
+                P{
+                    padding-top: 15px;
+                    color: $white;
+                    @media screen and (max-width: 750px){
+                        color: $black;
+                    }
+                }
+        }
+        .team__photo{
+            display: flex;
+            position: relative;
+            width: 50%;
+                @media screen and (max-width: 750px) {
+                    width: 100%;
+                }
+        }   
+        .square{ 
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+}
+.square{ 
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+.main__word{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 48%;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+        p{
+            color: $white;
+            line-height: 50px;
+        }
+}
+
+.our{
+    @media screen and (max-width: 750px) {
+        display: block;
+    }
+}
+
