@@ -213,6 +213,9 @@ aside :nth-child(5) {
     text-align: center;
         p{
             padding-top: 0px;
+            @media screen and (max-width: 513px){
+                display: none;
+            }
         }
         h1{
             padding-top: 15px;
@@ -280,11 +283,16 @@ aside :nth-child(5) {
     text-align: center;
 }
 .circle{
-    width: 30px;
-	height: 30px;
+    padding: 7px 10px;
 	background: $white;
     border-radius: 50px;
     margin: 0px auto;
+        a{
+            :hover {
+                color: $yellow;
+                transition: 0.5s;
+                }
+        }
 }
 .fas{
     color: $black;
@@ -723,5 +731,46 @@ aside :nth-child(5) {
 }
 
 .location{
-    margin: 50px 0px;
+    margin-top: 50px;
 }
+
+.footer{
+    background-color: $black;
+    display: flex;
+    padding: 20px 0px;
+        .footer-content{
+            display: block;
+            width: 100%;
+            text-align: center;
+                .foo-nav{
+                    ul{
+                        display: flex;
+                        justify-content: center;
+                            a{
+                                padding: 0 20px 0 20px;
+                                :hover {
+                                    color: $yellow;
+                                    transition: 0.5s;
+                                    }
+                            }
+                    }
+                }
+                .foo-social{
+                    padding: 10px 0px 18px 0px;
+                        a{
+                            border-right: 1px solid $white;
+                            line-height: .8;
+                            padding: 0 15px;
+                                :hover {
+                                color: $yellow;
+                                transition: 0.5s;
+                                }
+                        }
+                }
+        }
+}
+
+.svggg {
+    display: none;
+}
+

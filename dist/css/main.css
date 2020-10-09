@@ -227,6 +227,11 @@ aside :nth-child(5) {
 .main__info p {
   padding-top: 0px;
 }
+@media screen and (max-width: 513px) {
+  .main__info p {
+    display: none;
+  }
+}
 .main__info h1 {
   padding-top: 15px;
 }
@@ -300,11 +305,14 @@ aside :nth-child(5) {
 }
 
 .circle {
-  width: 30px;
-  height: 30px;
+  padding: 7px 10px;
   background: #fff;
   border-radius: 50px;
   margin: 0px auto;
+}
+.circle a :hover {
+  color: #E8C300;
+  transition: 0.5s;
 }
 
 .fas {
@@ -777,5 +785,43 @@ aside :nth-child(5) {
 }
 
 .location {
-  margin: 50px 0px;
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: #000000;
+  display: flex;
+  padding: 20px 0px;
+}
+.footer .footer-content {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.footer .footer-content .foo-nav ul {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-content .foo-nav ul a {
+  padding: 0 20px 0 20px;
+}
+.footer .footer-content .foo-nav ul a :hover {
+  color: #E8C300;
+  transition: 0.5s;
+}
+.footer .footer-content .foo-social {
+  padding: 10px 0px 18px 0px;
+}
+.footer .footer-content .foo-social a {
+  border-right: 1px solid #fff;
+  line-height: .8;
+  padding: 0 15px;
+}
+.footer .footer-content .foo-social a :hover {
+  color: #E8C300;
+  transition: 0.5s;
+}
+
+.svggg {
+  display: none;
 }

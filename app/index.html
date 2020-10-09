@@ -14,15 +14,15 @@
             <div class="menu">
                 <nav class="main-menu">
                     <ul class="items-menu">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">team</a></li>
-                        <li><a href="#">BOOKING</a></li>
+                        <li><a href="https://dmitrob.github.io/pageForRestaurant/">home</a></li>
+                        <li><a href="#aboutt">about</a></li>
+                        <li><a href="#team">team</a></li>
+                        <li><a href="#table">BOOKING</a></li>
                         <li class="logo wow fadeInDown"><a href="#"></a><img src="../src/img/ship's__rudder.png" alt="logo"></a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">GALERE</a></li>
-                        <li><a href="#">EVENTS</a></li>
-                        <li><a href="#">contact</a></li> 
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#events">EVENTS</a></li>
+                        <li><a href="#galerie">GALERIE</a></li>
+                        <li><a href="#contact">contact</a></li> 
                     </ul>
                 </nav>
             </div>
@@ -52,7 +52,9 @@
                     </div>
                 </div>
                 <div class="arrow">
-                    <div class="circle"><i class="fas fa-angle-down"></i></div>
+                    <a href="#about" class="circle">
+                        <i class="fas fa-angle-down"></i>
+                    </a>
                 </div>
                 <div class="social__pages">
                     <div class="social">
@@ -70,9 +72,9 @@
             </div>
         </div>    
     </div>
-    <div class="about">
-        <div class="section our">
-            <div class="sec__about">
+    <div   id="aboutt" class="about">
+        <div id="about" class="section our">
+            <div  class="sec__about">
                 <h2>ABOUT US</h2>
                 <div class="rectangle">
                     <div class="rectangle"></div>
@@ -97,7 +99,7 @@
             </div>
         </div>
     </div>
-    <div class="our__team"> 
+    <div id="team" class="our__team"> 
             <div class="main__word">
                 <p>OUR TEAM</p>
             </div>
@@ -127,7 +129,7 @@
             </div>
         </div>
     </div>
-    <div class="about">
+    <div id="table" class="about">
         <div class="section our">
             <div class="sec__about">
                 <h2>BOOK A TABLE</h2>
@@ -181,7 +183,7 @@
             <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782</p>
         </div>
     </div>
-    <div class="our__team"> 
+    <div id="menu" class="our__team"> 
         <div class="main__word">
             <p>SPECIALTIES</p>
         </div>
@@ -334,7 +336,7 @@
             </div>
         </div>
     </div>
-    <div class="our__team last__team"> 
+    <div id="events" class="our__team last__team"> 
         <div class="main__word">
             <p>PRIVATE EVENTS</p>
         </div>
@@ -351,7 +353,7 @@
                 +40 729 131 637/+40 726 458 782 or use the contact form.</p>
         </div>
     </div>
-    <div class="service">
+    <div id="galerie" class="service">
         <div class="service-info-content"> 
             <div class="single-service">
                     <img src="../src/img/mazzo.png" alt="">
@@ -367,7 +369,7 @@
             </div> 
         </div>
     </div>
-    <div class="about">
+    <div id="contact" class="about">
         <div class="section our">
             <div class="sec__about delicious">
                 <h2>CONTACT</h2>
@@ -417,6 +419,26 @@
     <div class="location">
         <div id="map"></div>
     </div>
+    <footer class="footer">
+        <div class="section">
+            <div class="footer-content text-center">
+                <nav class="foo-nav">
+                    <ul class="items-menu">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">team</a></li>
+                        <li><a href="#">contact</a></li> 
+                    </ul>
+                </nav>
+                <div class="foo-social"> 
+                    <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <p class="copyright">© copyright mindblister 2019</p>
+            </div>
+        </div>
+    </footer>
 
    
 
@@ -436,7 +458,7 @@
     <script src="../src/js/index.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVO_s1jm2HyzHmFyBpQ7YsRiAAE6uTX_s&callback=initMap"></script>
     
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg class="svggg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
             <symbol id="fb" viewBox="0 0 62 62">
                 <circle cx="31" cy="31" r="30" stroke="white" stroke-opacity="0.2"/>
