@@ -208,15 +208,17 @@ aside :nth-child(5) {
   flex-direction: column;
   text-align: center;
 }
-.face__block .head .face__info .open__hours {
-  transform: rotate(-90deg);
-}
 
 .restaurant {
-  display: none;
-  position: absolute;
-  top: 24%;
-  left: 1%;
+  display: flex;
+  color: rgba(51, 51, 51, 0.7);
+  justify-content: center;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 850px) {
+  .restaurant {
+    margin-top: 20px;
+  }
 }
 
 .main__info {
@@ -354,33 +356,17 @@ aside :nth-child(5) {
   position: relative;
   margin-top: 10px;
 }
+@media screen and (max-width: 750px) {
+  .about {
+    margin-top: 50px;
+  }
+}
 .about .sec__about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   width: 50%;
-  padding: 0px 77px;
-}
-@media screen and (max-width: 1200px) {
-  .about .sec__about {
-    padding: 0px 60px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .about .sec__about {
-    padding: 0px 40px;
-  }
-}
-@media screen and (max-width: 850px) {
-  .about .sec__about {
-    padding: 0px 20px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .about .sec__about {
-    padding: 0px;
-  }
 }
 @media screen and (max-width: 750px) {
   .about .sec__about {
@@ -409,6 +395,10 @@ aside :nth-child(5) {
   top: 0%;
   right: 0%;
   z-index: 1;
+}
+
+#pineapple {
+  padding: 0px;
 }
 
 .our__team {
@@ -456,6 +446,7 @@ aside :nth-child(5) {
 @media screen and (max-width: 750px) {
   .our__team .team__about {
     width: 100%;
+    margin-top: 50px;
   }
 }
 .our__team .team__about h2 {
@@ -500,6 +491,12 @@ aside :nth-child(5) {
   left: 0%;
 }
 
+@media screen and (max-width: 750px) {
+  .my__photo, .my__second {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .square {
     display: none;
@@ -526,4 +523,255 @@ aside :nth-child(5) {
   .our {
     display: block;
   }
+}
+
+.appointment-form {
+  padding-top: 15px;
+}
+.appointment-form .appointment-form-wrapp {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+@media screen and (max-width: 750px) {
+  .appointment-form .appointment-form-wrapp {
+    flex-direction: column;
+  }
+}
+.appointment-form .appointment-form-wrapp .form-main {
+  width: 49%;
+}
+@media screen and (max-width: 750px) {
+  .appointment-form .appointment-form-wrapp .form-main {
+    width: 100%;
+  }
+}
+.appointment-form .appointment-form-wrapp .form-main input {
+  display: block;
+  font-size: 14px;
+  background: #E5E5E5;
+  border: 1px solid #d4d3d3;
+  border-radius: 5px;
+  color: rgba(51, 51, 51, 0.5);
+  padding: 20px 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  outline: none;
+  resize: none;
+  text-indent: 20px;
+}
+
+.about .delicious {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.meal {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#black {
+  color: #000000;
+}
+
+.food {
+  display: flex;
+  margin-top: 50px;
+}
+.food .food__time {
+  flex-wrap: wrap;
+}
+.food .food__time .list__food {
+  width: 33%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .food .food__time .list__food {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .food .food__time .list__food {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+  }
+}
+.food .food__time .list__food .prise {
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 1315px) {
+  .food .food__time .list__food .prise h4 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .food .food__time .list__food .prise h4 {
+    font-size: 12px;
+  }
+}
+.food .food__time .list__food .prise p {
+  color: #000000;
+}
+@media screen and (max-width: 1024px) {
+  .food .food__time .list__food .prise p {
+    font-size: 8px;
+  }
+}
+
+.last__team {
+  display: flex;
+  position: relative;
+  background: url(../../src/img/specialtys__bg__second.png) no-repeat;
+  background-size: 100%;
+  margin-top: 50px;
+}
+.last__team .main__word {
+  left: 46%;
+}
+@media screen and (max-width: 1024px) {
+  .last__team .main__word {
+    display: none;
+  }
+}
+.last__team .our {
+  justify-content: center;
+}
+.last__team .our .my__photo {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+@media screen and (max-width: 750px) {
+  .last__team .our .my__photo {
+    display: none;
+  }
+}
+
+.last__word {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  left: 35%;
+}
+@media screen and (max-width: 1024px) {
+  .last__word {
+    display: none;
+  }
+}
+.last__word p {
+  color: #fff;
+  line-height: 50px;
+}
+
+.service {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.service .service-info-content {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .service .service-info-content {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.service .service-info-content .single-service {
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  .service .service-info-content .single-service {
+    margin-right: 0px;
+    padding: 0px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .service .service-info-content .single-service {
+    width: 100%;
+  }
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+.form__for .appointment-form {
+  width: 100%;
+}
+.form__for .appointment-form .form-main {
+  width: 33%;
+}
+@media screen and (max-width: 750px) {
+  .form__for .appointment-form .form-main {
+    width: 100%;
+  }
+}
+
+.form__for .form-main-text {
+  width: 100%;
+}
+.form__for .form-main-text textarea {
+  display: block;
+  background: #E5E5E5;
+  border: 1px solid #d4d3d3;
+  border-radius: 5px;
+  color: rgba(51, 51, 51, 0.5);
+  padding: 20px 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  outline: none;
+  resize: none;
+  text-indent: 20px;
+}
+
+.appointment__wrapp {
+  display: flex;
+}
+@media screen and (max-width: 992px) {
+  .appointment__wrapp {
+    display: block;
+  }
+}
+.appointment__wrapp .customize {
+  width: 50%;
+  padding-top: 12px;
+}
+@media screen and (max-width: 1300px) {
+  .appointment__wrapp .customize {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .appointment__wrapp .customize {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .appointment__wrapp .customize {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.appointment__wrapp .general__btn {
+  width: 50%;
+  text-align: center;
+}
+@media screen and (max-width: 1300px) {
+  .appointment__wrapp .general__btn {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+.check {
+  padding-right: 5px;
 }

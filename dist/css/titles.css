@@ -277,3 +277,36 @@ p {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 450px) {
+  p {
+    font-size: 8px;
+  }
+}
+
+span {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.7);
+}
+@media screen and (max-width: 449px) {
+  span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  span {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 374px) {
+  span {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  span {
+    font-size: 9px;
+  }
+}
+span .fas {
+  color: #E8C300;
+}
