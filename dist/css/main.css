@@ -775,3 +775,7 @@ aside :nth-child(5) {
 .check {
   padding-right: 5px;
 }
+
+.location {
+  margin: 50px 0px;
+}

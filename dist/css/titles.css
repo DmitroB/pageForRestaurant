@@ -310,3 +310,8 @@ span {
 span .fas {
   color: #E8C300;
 }
+
+#map {
+  width: 100%;
+  height: 400px;
+}
